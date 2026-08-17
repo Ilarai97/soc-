@@ -24,5 +24,34 @@
 
 **Time to triage:** 15mins 
 
+
+
+**Alert #2**
+
+**Date:** 2025-01-22
+
+**Severity:** Medium 
+
+**Source IP:** 172.16.17.207
+
+**Target:** Victor
+
+**Hypothesis:** Unusual or suspicious patterns of behavior linked to the hash have been identified, indicating potential exploitation of CVE-2024-49138.
+
+**Evidence:** 
+-The SOC335 alert revealed a true positive exploitation attempt of CVE-2024–49138. 
+-An attacker leveraged PowerShell to download and execute a malicious payload (svohost.exe) from an S3 bucket, bypassing detection by mimicking a legitimate Windows process. The file was executed under SYSTEM privileges, confirming escalation.
+-Further, attacker IP 185.107.56[.]141 successfully brute-forced the victim system over RDP, followed by C2 server communication.
+
+**Classification:** True positive - Malicious 
+
+**Action taken:** 
+
+**Time to triage:** 20mins 
+
+
+
+
+
   
 

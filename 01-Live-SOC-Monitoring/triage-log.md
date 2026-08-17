@@ -51,7 +51,17 @@
 
 
 
+**Alert #3**
 
+**Date:** 2025-07-22
 
-  
+**Severity:** Critical 
+
+**Source IP:** 107.191.58.76
+
+**Target:** SharePoint01
+
+**Hypothesis:** Suspicious unauthenticated POST request targeting ToolPane.aspx with large payload size and spoofed referer indicative of CVE-2025-53770 exploitation.
+
+**Evidence:** 
 

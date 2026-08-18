@@ -50,7 +50,7 @@ OR
 -There was a suspicious malicious IP address "185.107.56.141" which has an address of C2/Netherland . It was suspected to be an brute force attack. 
 -The endpoint then ran command to utilize conhost.exe by including "\??\"  which bypass a normal file path resolution .
 -They also forced the use of older conhost.exe by enforcing -ForceV1 in the command .
--We contained the has file for redemption . 
+-We contained the hash file for redemption . 
 
 **Classification:** True positive - Malicious 
 
@@ -73,4 +73,32 @@ OR
 **Hypothesis:** Suspicious unauthenticated POST request targeting ToolPane.aspx with large payload size and spoofed referer indicative of CVE-2025-53770 exploitation.
 
 **Evidence:** 
+
+
+
+**Alert #4**
+
+**Date:** 2025-02-04 
+
+**Severity:** Critical
+
+**Source IP:** 84.38.130.118 //smtp ip address
+
+**Target:** Austin@letsdefend.io
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

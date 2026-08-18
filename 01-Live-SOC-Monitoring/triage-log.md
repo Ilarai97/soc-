@@ -42,6 +42,15 @@
 -The SOC335 alert revealed a true positive exploitation attempt of CVE-2024–49138. 
 -An attacker leveraged PowerShell to download and execute a malicious payload (svohost.exe) from an S3 bucket, bypassing detection by mimicking a legitimate Windows process. The file was executed under SYSTEM privileges, confirming escalation.
 -Further, attacker IP 185.107.56[.]141 successfully brute-forced the victim system over RDP, followed by C2 server communication.
+OR
+-On Jan 22 2025 on 2:37AM our system was send an SIEM alert containing CVE 2024-49138 Exploitation Detection .
+-The endpoint 172.16.17.207 was observed showing suspicious sign of exploitation and tampering . We examined the endpoint and found a malicious suspected executable "svohost.exe". 
+-The suspected executable was trying to act like a real executable named "svchost.exe" . 
+-The suspected executable was contained in "C:\Windows\Temp\". 
+-There was a suspicious malicious IP address "185.107.56.141" which has an address of C2/Netherland . It was suspected to be an brute force attack. 
+-The endpoint then ran command to utilize conhost.exe by including "\??\"  which bypass a normal file path resolution .
+-They also forced the use of older conhost.exe by enforcing -ForceV1 in the command .
+-We contained the has file for redemption . 
 
 **Classification:** True positive - Malicious 
 

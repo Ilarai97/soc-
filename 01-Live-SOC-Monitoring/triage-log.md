@@ -187,7 +187,7 @@ OR
 
 **Target:** h.harris@thetrydaily.thm
 
-**Hypothesis:** Inbound Email Containing Suspicious External Link
+**Hypothesis:** Your Amazon Package Couldn’t Be Delivered – Action Required
 
 **Evidence:** -The true domain of amazon is "amazon.com" . But the email was sent from "urgents@amazon.biz" who is trying to impersonate amazon . 
 -There was an URL attached to the email which was shortened .
@@ -199,6 +199,32 @@ OR
 **Action Taken:** The email should be contained and further investigation should determine whether the recipient interacted with the link.
 
 **Time to triage:** 6mins 
+
+
+**Alert #9**
+
+**Time:** 08/21/2026 07:50:55 AM
+
+**Severity:** Medium 
+
+**Source address:** onboarding@hrconnex.thm
+
+**Target:** j.garcia@thetrydaily.thm
+
+**Hypothesis:** Action Required: Finalize Your Onboarding Profile
+
+**Evidence:** -The domain "hrconnex.thm" from which the email was sent was studied to be a real legitimate 3rd party HR partner .
+-There is no other malicious links or attachment we have found in the mail . 
+-It is an authorized business communication . 
+
+**Classification:** False positive - Non malicious 
+
+**Action taken:** No escalation needed .
+
+**Time to triage:** 4mins
+
+
+
 
 
 

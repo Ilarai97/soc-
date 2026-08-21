@@ -151,6 +151,33 @@ OR
 **Time to triage:** 8mins
 
 
+**ALert #7**
+
+**Date:** 2024-09-17 12:05 PM
+
+**Severity:** Medium 
+
+**Source IP:** 64.233.180.27
+
+**Target:** soc@letsdefend.io (172.16.20.3)
+
+**Hypothesis:** The MX record of a suspicious domain was changed, suggesting potential phishing activity
+
+**Evidence:** 
+-A medium-severity Threat Intelligence alert, SOC326 – Impersonating Domain MX Record Change Detected, was triggered for letsdefend.io. 
+-The domain’s MX record was changed to mail.mailerhost.net, indicating potentially suspicious email infrastructure associated with phishing or domain impersonation activity. 
+-The alert was originated from no-reply@cti-report.io and was sent to soc@letsdefend.io.
+-We found suspicious IP address on the mail as an attachment which was found to be malicious and belonged to Akamai Connected Cloud , C2/US . 
+-There was another URL attachment on the email when checked "https://icann.org/epp#clientTransferProhibited" which was found to be malicious and redirected to another page . 
+
+**Classification:** True positive - Malicious 
+
+**Action taken:**  We have deleted the mail from the host for further assessment . 
+
+**Time to triage:** 8mins
+
+
+
 
 
 

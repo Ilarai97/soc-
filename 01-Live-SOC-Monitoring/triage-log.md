@@ -127,6 +127,31 @@ OR
 **Time to triage:** 15mins 
 
 
+**Alert #6**
+
+**Date:** 2024-09-24  8:21:15 AM
+
+**Severity:** Low
+
+**Source IP:** 134.209.145.73
+
+**Target:** 52.15.206.21
+
+**Hypothesis:** Too many access attempts with the same user were detected in a short period of time from an unauthorized (configured as “unused” or “unsupported”) cloud region.
+
+**Evidence:** -On 2024-09-24  8:21:15AM there was an unauthorized cloud region access attempt detected from source address "134.209.145.73" to our destination address "52.15.206.21".
+-There were signs of continuous attempt to login to the Linux device but the access was denied and blocked . 
+-The source address belonged to Digital Ocean , LLC C2/India which was shown to be malicious when checked .
+-No greater harm was done to the destination device . 
+
+**Classification:** True positive - Malicious
+
+**Action taken:**  For further security the password can be changed in credential compromise is suspected .
+
+**Time to triage:** 8mins
+
+
+
 
 
 

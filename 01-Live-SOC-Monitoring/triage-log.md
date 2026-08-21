@@ -177,6 +177,31 @@ OR
 **Time to triage:** 8mins
 
 
+**Alert #8**
+
+**Date:** 08/21/2026 07:54:08 AM
+
+**Severity:** Medium 
+
+**Source IP:** urgents@amazon.biz 
+
+**Target:** h.harris@thetrydaily.thm
+
+**Hypothesis:** Inbound Email Containing Suspicious External Link
+
+**Evidence:** -The true domain of amazon is "amazon.com" . But the email was sent from "urgents@amazon.biz" who is trying to impersonate amazon . 
+-There was an URL attached to the email which was shortened .
+-The URL "http://bit.ly/3sHkX3da12340" when checked was shown to be malicious and belonged to Google LLC , C2/US .
+-There was a sense of urgency (48 hour) mentioned in the email , which proves it as a sign of phishing .
+
+**Classification:** True positive - Malicious 
+
+**Action Taken:** The email should be contained and further investigation should determine whether the recipient interacted with the link.
+
+**Time to triage:** 6mins 
+
+
+
 
 
 
